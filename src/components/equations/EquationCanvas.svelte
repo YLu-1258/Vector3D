@@ -3,6 +3,8 @@
         background-color: #b4b4b4;
         padding: 10px;
         width:20%;
+        margin:0%;
+        padding:0%;
     }
 </style>
 

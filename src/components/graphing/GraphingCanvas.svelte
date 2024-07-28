@@ -2,7 +2,9 @@
     .graphing-canvas {
         background-color: #e0e0e0;
         padding: 10px;
-        width:80%
+        width:80%;
+        margin:0%;
+        padding:0%;
     }
 </style>
 
