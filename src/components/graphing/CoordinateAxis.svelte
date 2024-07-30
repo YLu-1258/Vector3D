@@ -5,16 +5,20 @@
     import { setupScene } from './SceneSetup';
     import { createAxis } from './Axis';
     import { createAxisLabels, rotateAxisLables } from './AxisLablesHelper';
+    import { DynamicGridHelper } from './PlaneHelper';
 
 
     let container: HTMLDivElement;
   
     onMount(() => {
+        // Setup functions for scene and coordinate axis
         const { scene, renderer, camera, controls }: SceneSetupResult = setupScene(container);
         createAxis(scene);
         const { xLabel, yLabel, zLabel }: AxisLabelCollection = createAxisLabels(scene);
+        const GridHelper = new DynamicGridHelper(10,20,scene, container);
+    
         // Set camera position
-        camera.position.set(5.5,5.5,5.5);
+        camera.position.set(5.7,5.7,5.7);
         controls.update();
 
         // Animation Loop
