@@ -1,10 +1,10 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import type { SceneSetupResult } from './SceneSetup';
-    import type { AxisLabelCollection } from './AxisLables'
+    import type { AxisLabelCollection } from './AxisLablesHelper'
     import { setupScene } from './SceneSetup';
     import { createAxis } from './Axis';
-    import { createAxisLabels, rotateAxisLables } from './AxisLables';
+    import { createAxisLabels, rotateAxisLables } from './AxisLablesHelper';
 
 
     let container: HTMLDivElement;
